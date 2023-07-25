@@ -1,5 +1,5 @@
 class ContaBancaria:
-    def __init__(self, saldo_inicial=0):
+    def __init__(self, saldo_inicial=1000):
         self.saldo = saldo_inicial
         self.extrato = []
         self.saques_diarios = 0
@@ -32,6 +32,7 @@ class ContaBancaria:
         for movimento in self.extrato:
             print(movimento)
         print(f"Saldo atual: R${self.saldo:.2f}")
+
 
 # Função principal para executar o sistema
 def main():
@@ -66,6 +67,6 @@ def main():
         else:
             print("Opção inválida. Tente novamente.")
 
+
 if __name__ == "__main__":
     main()
-
